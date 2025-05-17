@@ -1,2 +1,37 @@
-*
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Ignore environment variables
 .env
+.env.*
+
+# Ignore virtual environments
+.venv/
+venv/
+ENV/
+
+# Ignore UV-specific files
+.uv/
+
+# Ignore VS Code settings
+.vscode/
+
+# macOS-specific
+.DS_Store
+
+# Windows-specific
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Ignore build outputs
+build/
+dist/
+*.egg-info/
+
+# Ignore Jupyter Notebook checkpoints (if used)
+.ipynb_checkpoints/
