@@ -1,0 +1,21 @@
+[project]
+name = "hello-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ali niaz", email = "aliniaz2004@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "openai-agents>=0.0.15",
+    "python-dotenv>=1.1.0",
+]
+
+[project.scripts]
+hello-agent = "hello_agent:main"
+start-agent = "hello_agent.agent_hello:run_agent"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
